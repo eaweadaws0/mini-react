@@ -1,5 +1,7 @@
 import React from "./React";
 
+const {render} = React
+
 const virtualDom = (
   <div>
     <h1>Hello World</h1>
@@ -12,5 +14,6 @@ const virtualDom = (
   </div>
 )
 
-console.log(virtualDom);
+// console.log(virtualDom);
 
+render(virtualDom, document.getElementById("root"))
