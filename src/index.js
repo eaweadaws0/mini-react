@@ -15,8 +15,10 @@ const virtualDom = (
   </div>
 )
 
+const Footer = () => <span>footer</span>
+
 const Header = () => {
-  return <h1>Header 组件</h1>
+  return <Footer/>
 }
 
 render(<Header/>, document.getElementById("root"))
