@@ -3,8 +3,9 @@ import React from "./React";
 const {render} = React
 
 const virtualDom = (
-  <div>
+  <div className={'wrapper'}>
     <h1>Hello World</h1>
+    <button onClick={()=>console.log(111)}>click me</button>
     <p>
       This i s a paragraph
       {1 === 1 && 123}
