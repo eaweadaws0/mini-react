@@ -15,10 +15,12 @@ const virtualDom = (
   </div>
 )
 
-const Footer = () => <span>footer</span>
+const Footer = ({name}) => <span>
+  my name is {name}
+</span>
 
 const Header = () => {
-  return <Footer/>
+  return <Footer name={'luff'}/>
 }
 
 render(<Header/>, document.getElementById("root"))

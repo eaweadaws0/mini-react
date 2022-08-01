@@ -1,5 +1,6 @@
 import mountElement from "./mountElement";
 import isFunctionComponent from "./isFunctionComponent";
+import isFunction from "./isFunction";
 
 export default function mountComponent(virtualDom, container) {
   let nextVirtualDom = null;
@@ -14,5 +15,6 @@ export default function mountComponent(virtualDom, container) {
 }
 
 function buildFunctionComponent(virtualDom) {
-  return virtualDom.type()
+  const {type, props} = virtualDom;
+  return isFunction(virtualDom) ? type(props || {}) : null;
 }
