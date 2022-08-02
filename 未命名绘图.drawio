@@ -1,18 +1,26 @@
-<mxfile host="app.diagrams.net" modified="2022-08-02T03:04:06.275Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 Edg/103.0.1264.71" etag="z9GvgA8AxSOnrA_EWb27" version="20.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-02T03:09:09.660Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 Edg/103.0.1264.71" etag="zs4oknL2iTUDBkaCnGsA" version="20.2.2" type="github">
   <diagram name="Page-1" id="e7e014a7-5840-1c2e-5031-d8a46d1fe8dd">
-    <mxGraphModel dx="1878" dy="1055" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1817" dy="1055" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="2" value="Thread 1" style="swimlane;whiteSpace=wrap" parent="1" vertex="1">
-          <mxGeometry x="50" y="40" width="1170" height="570" as="geometry" />
+          <mxGeometry x="60" y="110" width="1170" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="i83nrP6Kk43gGGKF7BsK-89" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#FF3333;startSize=26;" edge="1" parent="2" source="i83nrP6Kk43gGGKF7BsK-50" target="i83nrP6Kk43gGGKF7BsK-84">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="230" />
+              <mxPoint x="300" y="230" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="i83nrP6Kk43gGGKF7BsK-50" value="render" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontColor=#FF3333;" vertex="1" parent="2">
           <mxGeometry x="40" y="50" width="210" height="194" as="geometry">
-            <mxRectangle x="30" y="80" width="80" height="30" as="alternateBounds" />
+            <mxRectangle x="40" y="50" width="80" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="i83nrP6Kk43gGGKF7BsK-67" value="&lt;span style=&quot;text-align: left;&quot;&gt;&lt;font color=&quot;#67ab9f&quot;&gt;-- 把虚拟DOm转化为真实DOM --&lt;/font&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FF3333;" vertex="1" parent="i83nrP6Kk43gGGKF7BsK-50">
+        <mxCell id="i83nrP6Kk43gGGKF7BsK-67" value="&lt;span style=&quot;text-align: left;&quot;&gt;&lt;font color=&quot;#67ab9f&quot;&gt;把虚拟DOm转化为真实DOM&lt;/font&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FF3333;" vertex="1" parent="i83nrP6Kk43gGGKF7BsK-50">
           <mxGeometry y="26" width="210" height="60" as="geometry" />
         </mxCell>
         <mxCell id="i83nrP6Kk43gGGKF7BsK-51" value="+ virtualDom: babel生成的虚拟DOM&#xa;+ container: 挂载容器&#xa;+ oldDom: 旧的Dom，更新时需要" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="i83nrP6Kk43gGGKF7BsK-50">
@@ -22,6 +30,23 @@
           <mxGeometry y="160" width="210" height="8" as="geometry" />
         </mxCell>
         <mxCell id="i83nrP6Kk43gGGKF7BsK-53" value="&gt; diff(virtualDom,container,oldDom) " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="i83nrP6Kk43gGGKF7BsK-50">
+          <mxGeometry y="168" width="210" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="i83nrP6Kk43gGGKF7BsK-84" value="diff" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontColor=#FF3333;" vertex="1" parent="2">
+          <mxGeometry x="315" y="140" width="210" height="194" as="geometry">
+            <mxRectangle x="40" y="50" width="80" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i83nrP6Kk43gGGKF7BsK-85" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font color=&quot;#67ab9f&quot;&gt;判断是否存在旧的DOM，不存在则直接挂载，存在则更新&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FF3333;" vertex="1" parent="i83nrP6Kk43gGGKF7BsK-84">
+          <mxGeometry y="26" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i83nrP6Kk43gGGKF7BsK-86" value="+ virtualDom: babel生成的虚拟DOM&#xa;+ container: 挂载容器&#xa;+ oldDom: 旧的Dom，更新时需要" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="i83nrP6Kk43gGGKF7BsK-84">
+          <mxGeometry y="86" width="210" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="i83nrP6Kk43gGGKF7BsK-87" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="i83nrP6Kk43gGGKF7BsK-84">
+          <mxGeometry y="160" width="210" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="i83nrP6Kk43gGGKF7BsK-88" value="&gt; diff(virtualDom,container,oldDom) " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="i83nrP6Kk43gGGKF7BsK-84">
           <mxGeometry y="168" width="210" height="26" as="geometry" />
         </mxCell>
       </root>
