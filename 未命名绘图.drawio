@@ -1,0 +1,126 @@
+<mxfile host="app.diagrams.net" modified="2022-08-02T07:36:52.557Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 Edg/103.0.1264.71" etag="5UhCtJbwuwVMHCChN3Ne" version="20.2.2" type="github">
+  <diagram name="Page-1" id="e7e014a7-5840-1c2e-5031-d8a46d1fe8dd">
+    <mxGraphModel dx="2078" dy="1161" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Thread 1" style="swimlane;whiteSpace=wrap" parent="1" vertex="1">
+          <mxGeometry x="70" y="30" width="1980" height="920" as="geometry" />
+        </mxCell>
+        <mxCell id="i83nrP6Kk43gGGKF7BsK-89" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#FF3333;startSize=26;" parent="2" source="i83nrP6Kk43gGGKF7BsK-50" target="i83nrP6Kk43gGGKF7BsK-84" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="230" />
+              <mxPoint x="300" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i83nrP6Kk43gGGKF7BsK-50" value="render" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontColor=#FF3333;" parent="2" vertex="1">
+          <mxGeometry x="40" y="50" width="210" height="194" as="geometry">
+            <mxRectangle x="40" y="50" width="80" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i83nrP6Kk43gGGKF7BsK-67" value="&lt;span style=&quot;text-align: left;&quot;&gt;&lt;font color=&quot;#67ab9f&quot;&gt;把虚拟DOm转化为真实DOM&lt;/font&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FF3333;" parent="i83nrP6Kk43gGGKF7BsK-50" vertex="1">
+          <mxGeometry y="26" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i83nrP6Kk43gGGKF7BsK-51" value="+ virtualDom: babel生成的虚拟DOM&#xa;+ container: 挂载容器&#xa;+ oldDom: 旧的Dom，更新时需要" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="i83nrP6Kk43gGGKF7BsK-50" vertex="1">
+          <mxGeometry y="86" width="210" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="i83nrP6Kk43gGGKF7BsK-52" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="i83nrP6Kk43gGGKF7BsK-50" vertex="1">
+          <mxGeometry y="160" width="210" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="i83nrP6Kk43gGGKF7BsK-53" value="&gt; diff(virtualDom,container,oldDom) " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="i83nrP6Kk43gGGKF7BsK-50" vertex="1">
+          <mxGeometry y="168" width="210" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="i83nrP6Kk43gGGKF7BsK-84" value="diff" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontColor=#FF3333;" parent="2" vertex="1">
+          <mxGeometry x="315" y="140" width="220" height="200" as="geometry">
+            <mxRectangle x="40" y="50" width="80" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i83nrP6Kk43gGGKF7BsK-85" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font color=&quot;#67ab9f&quot;&gt;判断是否存在旧的DOM，不存在则直接挂载，存在则更新&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FF3333;" parent="i83nrP6Kk43gGGKF7BsK-84" vertex="1">
+          <mxGeometry y="26" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i83nrP6Kk43gGGKF7BsK-86" value="+ virtualDom: 虚拟DOM&#xa;+ container: 挂载容器&#xa;+ oldDom: 旧的Dom，更新时需要" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="i83nrP6Kk43gGGKF7BsK-84" vertex="1">
+          <mxGeometry y="86" width="220" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="i83nrP6Kk43gGGKF7BsK-87" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="i83nrP6Kk43gGGKF7BsK-84" vertex="1">
+          <mxGeometry y="150" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="i83nrP6Kk43gGGKF7BsK-88" value="if 不存在oldDom则直接挂载&#xa;&gt; mountElement(virtualDom,container) " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="i83nrP6Kk43gGGKF7BsK-84" vertex="1">
+          <mxGeometry y="158" width="220" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="Zef4_LOhcrwV61izIBPc-4" value="mountElement" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontColor=#FF3333;" vertex="1" parent="2">
+          <mxGeometry x="590" y="260" width="250" height="224" as="geometry">
+            <mxRectangle x="590" y="260" width="80" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zef4_LOhcrwV61izIBPc-5" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font color=&quot;#67ab9f&quot;&gt;处理原生element与组件&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FF3333;" vertex="1" parent="Zef4_LOhcrwV61izIBPc-4">
+          <mxGeometry y="26" width="250" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Zef4_LOhcrwV61izIBPc-14" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&amp;nbsp;+ virtualDom: 虚拟DOM&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&amp;nbsp;+ container: 虚拟DOM需要挂载的容器&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#FF3333;startSize=26;strokeColor=rgb(0, 0, 0);fillColor=rgb(255, 255, 255);align=left;" vertex="1" parent="Zef4_LOhcrwV61izIBPc-4">
+          <mxGeometry y="70" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Zef4_LOhcrwV61izIBPc-6" value="if 原生element&#xa;&gt; mountNativeElement(virtualDom, container) " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zef4_LOhcrwV61izIBPc-4">
+          <mxGeometry y="130" width="250" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Zef4_LOhcrwV61izIBPc-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Zef4_LOhcrwV61izIBPc-4">
+          <mxGeometry y="174" width="250" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Zef4_LOhcrwV61izIBPc-8" value="if 组件&#xa;&gt; mountComponent(virtualDom, container) " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zef4_LOhcrwV61izIBPc-4">
+          <mxGeometry y="182" width="250" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="Zef4_LOhcrwV61izIBPc-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#FF3333;startSize=26;" edge="1" parent="2" source="i83nrP6Kk43gGGKF7BsK-88" target="Zef4_LOhcrwV61izIBPc-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zef4_LOhcrwV61izIBPc-19" value="mountComponent" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontColor=#FF3333;" vertex="1" parent="2">
+          <mxGeometry x="900" y="360" width="250" height="240" as="geometry">
+            <mxRectangle x="590" y="260" width="80" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zef4_LOhcrwV61izIBPc-20" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font color=&quot;#67ab9f&quot;&gt;处理函数组件与类组件&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FF3333;" vertex="1" parent="Zef4_LOhcrwV61izIBPc-19">
+          <mxGeometry y="26" width="250" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Zef4_LOhcrwV61izIBPc-21" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&amp;nbsp;+ virtualDom: 虚拟DOM&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&amp;nbsp;+ container: 虚拟DOM需要挂载的容器&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#FF3333;startSize=26;strokeColor=rgb(0, 0, 0);fillColor=rgb(255, 255, 255);align=left;" vertex="1" parent="Zef4_LOhcrwV61izIBPc-19">
+          <mxGeometry y="70" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Zef4_LOhcrwV61izIBPc-22" value="if 函数组件&#xa;&gt; mountNativeElement(element, container)&#xa;= 返回新的虚拟DOM 再次调用mountElement" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.33,0,0,0],[0,0.5,0,0,0],[0,0.67,0,0,0],[1,0.5,0,0,0]];portConstraint=eastwest;" vertex="1" parent="Zef4_LOhcrwV61izIBPc-19">
+          <mxGeometry y="130" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Zef4_LOhcrwV61izIBPc-23" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Zef4_LOhcrwV61izIBPc-19">
+          <mxGeometry y="190" width="250" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Zef4_LOhcrwV61izIBPc-24" value="if 类组件&#xa;&gt; mountComponent(element, container) " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zef4_LOhcrwV61izIBPc-19">
+          <mxGeometry y="198" width="250" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="Zef4_LOhcrwV61izIBPc-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#FF3333;startSize=26;" edge="1" parent="2" source="Zef4_LOhcrwV61izIBPc-8" target="Zef4_LOhcrwV61izIBPc-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zef4_LOhcrwV61izIBPc-26" value="buildFunctionComponent" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontColor=#FF3333;" vertex="1" parent="2">
+          <mxGeometry x="1240" y="470" width="210" height="90" as="geometry">
+            <mxRectangle x="40" y="50" width="80" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zef4_LOhcrwV61izIBPc-27" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font color=&quot;#67ab9f&quot;&gt;执行函数组件，返回虚拟DOM&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FF3333;" vertex="1" parent="Zef4_LOhcrwV61izIBPc-26">
+          <mxGeometry y="26" width="210" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Zef4_LOhcrwV61izIBPc-28" value="+ virtualDom: 虚拟DOM" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zef4_LOhcrwV61izIBPc-26">
+          <mxGeometry y="60" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Zef4_LOhcrwV61izIBPc-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#FF3333;startSize=26;" edge="1" parent="2" source="Zef4_LOhcrwV61izIBPc-22" target="Zef4_LOhcrwV61izIBPc-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1170" y="530" />
+              <mxPoint x="1170" y="240" />
+              <mxPoint x="715" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zef4_LOhcrwV61izIBPc-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#FF3333;startSize=26;" edge="1" parent="1" source="Zef4_LOhcrwV61izIBPc-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1310" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
