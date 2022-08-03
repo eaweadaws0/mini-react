@@ -11,10 +11,17 @@ export default function mountComponent(virtualDom, container) {
     mountElement(nextVirtualDom, container);
   } else {
     // 类组件
+    nextVirtualDom = buildClassComponent(virtualDom);
+    mountElement(nextVirtualDom, container);
   }
 }
 
 function buildFunctionComponent(virtualDom) {
-  const {type, props} = virtualDom;
+  const { type, props } = virtualDom;
   return isFunction(virtualDom) ? type(props || {}) : null;
+}
+
+function buildClassComponent(virtualDom) {
+  const { type, props } = virtualDom;
+  return new type(props || {}).render();
 }
